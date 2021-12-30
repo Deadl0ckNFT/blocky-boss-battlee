@@ -18,7 +18,9 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.PlayerShot, function (sprite, oth
         lifeBar.setImage(lifeBarPic)
         if (bossLife <= 0) {
             game.showLongText("Congratulations!", DialogLayout.Center)
-            game.showLongText("", DialogLayout.Bottom)
+            game.showLongText("You've escaped this game, you're one step closer to getting back to the spirit realm. ", DialogLayout.Bottom)
+            game.showLongText("If only this locator didn't have a mind of its own, surely it'll work now? ", DialogLayout.Bottom)
+            game.showLongText("Lets try https://tiny.one/67492 ", DialogLayout.Bottom)
             game.over(true)
         } else if (bossLife % 12 == 0) {
             preSetBossPosition(80, 30)
@@ -165,7 +167,8 @@ let lifeBarPic: Image = null
 let boss: Sprite = null
 let mySprite: Sprite = null
 let bossLife = 0
-game.showLongText("You found the next part of the puzzle! Beat the game to get the next clue.", DialogLayout.Center)
+game.showLongText("How do I work this thing? It teleported me into another game!", DialogLayout.Center)
+game.showLongText("...Wait what's shooting at me? HELP!!", DialogLayout.Bottom)
 bossLife = 48
 info.setLife(20)
 info.setScore(0)
