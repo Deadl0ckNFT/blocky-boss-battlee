@@ -168,7 +168,7 @@ let boss: Sprite = null
 let mySprite: Sprite = null
 let bossLife = 0
 game.showLongText("How do I work this thing? It teleported me into another game!", DialogLayout.Center)
-game.showLongText("...Wait what's shooting at me? HELP!!", DialogLayout.Bottom)
+game.showLongText("...Wait what's shooting at me? HELP!!!", DialogLayout.Bottom)
 bossLife = 48
 info.setLife(20)
 info.setScore(0)
